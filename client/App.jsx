@@ -9,11 +9,8 @@ class App extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-
     text = this.refs.textInput.value.trim();
-
     Tasks.insert({ text, createdAt: new Date() });
-
     this.refs.textInput.value = '';
   }
 
